@@ -1,0 +1,93 @@
+.services-section {
+  background-color: #f9f4ef;
+  padding: 5rem 2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.services-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #7a5537;
+  margin-bottom: 1rem;
+}
+
+.services-subheading {
+  color: #7a5537;
+  font-size: 1rem;
+  max-width: 37.5rem; /* 600px */
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.25rem, 1fr)); /* 260px */
+  gap: 2rem;
+  margin-bottom: 3rem;
+  justify-items: center;
+}
+
+.service-card {
+  position: relative;
+  background-color: #e4cab5;
+  border-radius: 0.5rem; /* 8px */
+  padding: 5rem 1rem 2rem;
+  width: 100%;
+  max-width: 18.75rem; /* 300px */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* 8px 16px */
+}
+
+.service-label {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: #6d4e35;
+  font-weight: 600;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  letter-spacing: 0.0625rem; /* 1px */
+  font-size: 0.9rem;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #5d3b2e;
+  line-height: 1.5;
+  padding: 1rem 1rem;
+}
+
+.services-cta {
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #7a5537;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  font-size: 0.95rem;
+  color: #5d3b2e;
+  max-width: 37.5rem; /* 600px */
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #c49d7f;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3125rem; /* 5px */
+  cursor: pointer;
+  letter-spacing: 0.0625rem; /* 1px */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #b68a6b;
+}
