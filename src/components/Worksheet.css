@@ -1,0 +1,61 @@
+.freebie-section {
+  background-color: #fdf7f3;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.freebie-container {
+  max-width: 50rem; /* 800px */
+  margin: 0 auto;
+}
+
+.freebie-section h2 {
+  font-size: 2rem;
+  color: #7a5c45;
+  margin-bottom: 1rem;
+  
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #a07e63;
+  margin-bottom: 2rem;
+  
+  
+}
+
+.freebie-card {
+  background: #fff;
+  border: 0.0625rem solid #e8dccc; /* 1px */
+  border-radius: 0.75rem;
+  padding: 2rem;
+ box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); /* 4px 12px */
+ 
+}
+
+.highlight {
+  font-size: 1.1rem;
+  color: #5a4031;
+  margin-bottom: 0.5rem;
+}
+
+.freebie-card p {
+  color: #6f4e37;
+  margin-bottom: 1.5rem;
+  
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #7a5c45;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #5e4432;
+}

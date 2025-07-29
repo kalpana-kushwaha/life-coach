@@ -1,0 +1,454 @@
+.hero-replica {
+  background: linear-gradient(150deg, #faf7f3 20%, #f8f2ec 30%, #f3dfd6 50%);
+  padding: 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 75rem; 
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem; 
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 18.75rem; /* 300px */
+  position: relative;
+  margin-right: 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: var(--choco-brown);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-script {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero-subheadline {
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  max-width: 100%;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
+}
+
+.shift-message {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.hero-cta {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3125rem; /* 5px */
+  letter-spacing: 0.0625rem; /* 1px */
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 1rem auto;
+}
+
+.hero-cta:hover {
+  background-color: #a87f65;
+}
+
+.hero-right {
+  flex: 0.8;
+  position: relative;
+  text-align: center;
+}
+
+.coach-img {
+  max-width: 70%;
+  height: auto;
+    object-fit: cover;
+  border-radius: 80% 80% 0 0 / 60% 60% 0 0;
+  margin: 0 auto 1rem  3rem; /* 60px */
+}
+
+.flower-img {
+  position: absolute;
+  transform: translateX(-50%) rotate(20deg);
+  bottom: -10%; /* -30px */
+  left: 25%;
+  width: 12.5rem; /* 200px */
+  opacity: 1;
+}
+
+.sparkle {
+  position: absolute;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.sparkle-1 {
+  top: 8.125rem; /* 130px */
+  left: -2.5rem; /* -40px */
+  font-size: 3rem;
+}
+
+.sparkle-2 {
+  top: 10rem; /* 160px */
+  left: -4.375rem; /* -70px */
+  font-size: 4rem;
+}
+
+/* Elevate Section */
+.elevate-section {
+  position: relative;
+  background-color: #eacdbf;
+  text-align: center;
+  padding: 4rem 1rem; /* 110px 20px */
+  overflow: hidden;
+}
+
+.elevate-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 50;
+  color: #7a5537;
+  margin: 0;
+}
+
+.elevate-subheading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  margin-top: 0.625rem; /* 10px */
+  letter-spacing: 0.125rem; /* 2px */ 
+}
+
+/* Elevate Sparkles */
+.sparkle-left {
+  bottom: 6.25rem; /* 100px */
+  left: 1.25rem; /* 20px */
+  font-size: 2rem;
+}
+
+.sparkle-right {
+  top: 3.75rem; /* 60px */
+  right: 3.75rem; /* 60px */
+  font-size: 2rem;
+}
+
+.sparkle-bottom {
+  bottom: 0.5rem; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5rem;
+}
+
+/* About Section */
+.about-section {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 3rem;
+  margin-top: 0.5rem; 
+}
+
+.about-container {
+  display: flex;
+max-width: 85rem; 
+  width: 100%;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.about-left {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 33.75rem;
+}
+
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 4.375rem; /* 70px */
+  right: 3.75rem; /* 60px */
+  width: 100%;
+  height: 95%;
+  background-color: #f1ded3;
+  z-index: 1;
+}
+
+.coach-photo {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-right {
+  flex: 1 1 50%;
+ margin-top: 2.5rem; /* 40px */
+  background-color: #f3dfd6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 50.5rem; 
+  height: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.about-welcome {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  font-weight: 100;
+  color: #9e7e6d;
+  margin: 0;
+  position: absolute;
+  top: -1.5rem;
+  left: 2rem;
+}
+
+.about-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #7a5537;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+.about-role {
+  color: #fff;
+  background-color: #a47b62;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.about-subline {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #7a5537;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.about-text p {
+  margin-bottom: 1.25rem;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  color: #5d3b2e;
+  font-family:'Lora', serif;
+}
+
+
+.about-btn {
+  position: absolute;
+  bottom: -1.3rem;
+  right: 7rem;
+  background-color: #d6b291;
+  color: #5d3b2e;
+  padding: 0.75rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 📱 Responsive Fix for devices ≤ 768px */
+@media (max-width: 48rem) {
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-script {
+    font-size: 1.8rem;
+  }
+
+  .hero-cta {
+    width: 100%;
+    max-width: 18.75rem; /* 300px */
+    margin: 1rem auto;
+  }
+
+  .coach-img {
+    margin: 0 auto 2rem auto;
+  }
+
+  .flower-img {
+    bottom: -1.875rem; /* -30px */
+    left: 15%;
+    transform: translateX(-50%) rotate(30deg);
+    width: 9.375rem; /* 150px */
+  }
+
+  .sparkle-left {
+    bottom: 6.25rem; /* 100px */
+    left: 0.625rem; /* 10px */
+    font-size: 2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  .about-left,
+  .about-right {
+    flex: 1 1 100%;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .image-wrapper {
+    max-width: 100%;
+  }
+
+  .image-wrapper::before {
+    top: 1.875rem; /* 30px */
+    right: 1.875rem; /* 30px */
+    height: 100%;
+  }
+
+  .coach-photo {
+    width: 100%;
+  }
+
+  .about-right {
+    padding: 1.5rem;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .about-welcome {
+    font-size: 2.5rem;
+    top: -1rem;
+    left: 1rem;
+  }
+
+  .about-name {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-role {
+    font-size: 0.9rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .about-btn {
+    position: static;
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+/* 📱 Specific fix for very small screens like 360px–430px width */
+@media (max-width: 26.875rem) {
+  .hero-replica {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 1rem 0;
+  }
+
+  .hero-script {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subheadline {
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+    max-width: 95%;
+  }
+
+  .coach-img {
+    max-width: 75%;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .flower-img {
+    width: 8.125rem; /* 130px */
+    bottom: -1.25rem; /* -20px */
+    left: 15%;
+    transform: translateX(-50%) rotate(30deg);
+  }
+
+  .sparkle-1,
+  .sparkle-2 {
+    display: none;
+  }
+}

@@ -1,0 +1,196 @@
+.services-section {
+  background: linear-gradient(150deg, #faf7f3 20%, #f8f2ec 30%, #f3dfd6 50%); /* Your specified gradient */
+  padding: 2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Adding a Subtle Border with Rounded Corners */
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Light border */
+  border-radius: 1rem;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Headings */
+.services-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.75rem;
+  color: #6d4e35; /* Slightly darker color to match the earthy theme */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.services-subheading {
+  color: #6d4e35;
+  font-size: 1.1rem;
+  max-width: 40rem;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Service Cards */
+.service-card {
+  position: relative;
+  background-color: #e8d2bd; /* Light peach for the cards */
+  border-radius: 1rem;
+  padding: 3.5rem 1.5rem 1rem;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Darker hover effect */
+}
+
+/* Service Label */
+.service-label {
+  position: absolute;
+  top: -1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: #6d4e35;
+  font-weight: 600;
+  padding: 0.4rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+}
+
+/* Service Description */
+.service-description {
+  font-size: 0.95rem;
+  color: #4b2e24;
+  line-height: 1.6;
+  padding: 0.5rem;
+}
+
+/* Local Video Section */
+.local-video-container {
+  margin: 3rem auto 1rem;
+  max-width: 720px;
+  background: #fffaf6;
+  border: 1px solid #f2e2d0;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+.video-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #7a5537;
+  margin-bottom: 0.5rem;
+}
+
+.video-subtext {
+  font-size: 1rem;
+  color: #5d3b2e;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.video-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.styled-video {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+/* CTA Section */
+.services-cta {
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #7a5537;
+  margin-bottom: 0.5rem;
+}
+
+.cta-description {
+  font-size: 0.95rem;
+  color: #5d3b2e;
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #c49d7f;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  letter-spacing: 0.05rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #b68a6b;
+  box-shadow: 0 0.5rem 1.25rem rgba(196, 157, 127, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-heading {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    max-width: 90%;
+    padding: 2.5rem 1rem 1.5rem;
+    margin-bottom: 1rem;
+    
+  }
+
+  /* Fix service label for mobile */
+  .service-label {
+    padding: 0.3rem 1rem;
+    font-size: 0.85rem;
+    max-width: 70%;
+  }
+
+  .video-wrapper video {
+    height: auto;
+  }
+
+  .styled-video {
+    max-height: 240px;
+  }
+}
