@@ -50,8 +50,8 @@ const Header = () => {
             <Link to="/">HOME</Link>
             <Link to="/#about">ABOUT</Link>
             <Link to="/#services">SERVICES</Link>
-            <Link to="#testimonials">RESULTS</Link>
-            <Link to="#freebie">WORKSHEET</Link>
+            <Link to="/#testimonials">RESULTS</Link>
+            <Link to="/#freebie">WORKSHEET</Link>
             <Link to="/contact">CONTACT</Link>
           </nav>
         </div>
@@ -72,7 +72,7 @@ const Header = () => {
           <Link to="/#about" onClick={() => setMenuOpen(false)}>ABOUT</Link>
           <Link to="/#services" onClick={() => setMenuOpen(false)}>SERVICES</Link>
           <Link to="/#testimonials" onClick={() => setMenuOpen(false)}>RESULTS</Link>
-          <Link to="#freebie" onClick={() => setMenuOpen(false)}>WORKSHEET</Link>
+          <Link to="/#freebie" onClick={() => setMenuOpen(false)}>WORKSHEET</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>CONTACT</Link>
           <div className="mobile-social-icons">
             <a href="https://www.instagram.com/pooja_abhayk" target="_blank" rel="noopener noreferrer">

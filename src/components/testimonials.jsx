@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Testimonials.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import bgImage from '/testimonial.png'; 
 
 const testimonials = [
@@ -46,7 +47,7 @@ You light up when someone says, ‘Pooja, you helped me see what I couldn’t be
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = ( { id = "testimonials" }) => {
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -104,6 +105,7 @@ const Testimonials = () => {
 
   return (
     <section
+      id={id}
       className="testi-section"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
