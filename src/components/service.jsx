@@ -26,7 +26,7 @@ const ServicesSection = ({ id = "services" }) => {
             <strong>You don’t have to hold it all together anymore.</strong><br /><br />
             These private sessions are your safe space to pause, process, and finally speak your truth — without fear or filters. <br />
             We’ll move from overwhelm to clarity, and from people-pleasing to powerful self-expression. <br />
-            <strong>✨ One honest conversation can change everything.</strong>
+            <strong> One honest conversation can change everything.</strong>
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const ServicesSection = ({ id = "services" }) => {
             <strong>You’re not the only one who feels this way — and that changes everything.</strong><br /><br />
             Inside these sessions, real stories meet real healing. <br />
             You’ll be seen, heard, and supported by a circle that just gets it. Because growth feels safer — and stronger — when we rise together. <br />
-            <strong>✨ Come for the clarity, stay for the connection.</strong>
+            <strong>Come for the clarity, stay for the connection.</strong>
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const ServicesSection = ({ id = "services" }) => {
             These aren’t just workshops — they’re wake-up calls. <br />
             Each one helps you decode your emotions, speak with confidence, and build real, honest connections. <br />
             No fluff. Just focused transformation in a short time. <br />
-            <strong>✨ Walk in with questions. Walk out with clarity.</strong>
+            <strong>Walk in with questions. Walk out with clarity.</strong>
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ const ServicesSection = ({ id = "services" }) => {
       </div>
 
       <div data-aos="fade-up" data-aos-delay="300">
-        <h3 className="services-cta">✨ Not sure what you need? Let’s find the path together.</h3>
+        <h3 className="services-cta">Not sure what you need? Let’s find the path together.</h3>
         <p className="cta-description">
           A free clarity call to help you understand where you are and where you’re ready to go.
         </p>

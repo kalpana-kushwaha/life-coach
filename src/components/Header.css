@@ -265,3 +265,9 @@ body {
     letter-spacing: 0.1875rem;
   }
 }
+
+.mobile-menu-toggle {
+  -webkit-tap-highlight-color: transparent; 
+  outline: none; 
+  background-color: transparent; 
+}

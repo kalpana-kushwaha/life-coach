@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600;700&family=Merriweather:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Lora:wght@400;700&display=swap');
 
-
-/* ========== VARIABLES ========== */
+/* ========== COLOR SCHEME ENFORCEMENT ========== */
 :root {
+  /* Forces browser to use light mode */
+  color-scheme: light;
+
   /* Colors */
   --soft-beige: #f1ded3;
   --choco-brown: #7a5537;
@@ -10,12 +12,12 @@
   --accent: #c59d84;
 
   /* Breakpoints */
-  --breakpoint-sm: 480px;   /* phones */
-  --breakpoint-md: 768px;   /* tablets */
-  --breakpoint-lg: 1024px;  /* laptops */
-  --breakpoint-xl: 1280px;  /* desktops */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
 
-   /* Container width */
+  /* Container width */
   --max-container-width: 1400px;
 }
 
@@ -28,6 +30,15 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff !important;
+    color: var(--choco-brown) !important;
+  }
 }
 
 body {
@@ -36,11 +47,12 @@ body {
   background-color: #fff;
   color: var(--choco-brown);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* smoother fonts on Mac */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ========== OPTIONAL UTILITY CLASSES ========== */
 
-/* Centered container */
 .container {
   max-width: var(--max-container-width);
   margin: 0 auto;
@@ -56,10 +68,11 @@ body {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
-
+/* ========== ROOT & APP FULL HEIGHT ========== */
 html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  
+  background-color: #ffffff;
+  color: var(--choco-brown);
 }
