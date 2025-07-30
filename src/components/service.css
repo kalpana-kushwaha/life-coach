@@ -1,6 +1,6 @@
 /* Services Section */
 .services-section {
-  background: linear-gradient(150deg, #fdf4f9 20%, #f8eef4 35%, #f3dce6 55%);
+  background: linear-gradient(150deg, #eed8e4 20%, #f8eef4 35%, #f3dce6 55%);
   padding: 2rem 1rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -48,7 +48,7 @@
 
 /* Service Cards */
 .service-card {
-  background-color: #fbe9f3;
+  background-color: #e9d8ee;
   border-radius: 1rem;
   padding: 3.5rem 1.5rem 1rem;
   width: 100%;
