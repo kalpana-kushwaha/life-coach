@@ -93,56 +93,65 @@
 
 /* FAQ Section */
 .faq-section {
-  background-color: #f5eaf5; /* Gentle mauve */
+  background-color: #f5eaf5; 
   padding: 1rem 1rem;
   max-width: 1200px;
-  margin-top: 1rem;
+  margin: 1rem auto;
   border-radius: 1rem;
   width: 100%;
 }
 
+
 .faq-heading {
   font-size: 2.2rem;
   text-align: center;
-  color: #6c4a5f; /* Deep plum */
-  margin-bottom: 1rem;
+  color: #6c4a5f;
+  margin-bottom: 2rem;
   font-family: 'Playfair Display', serif;
 }
 
 .faq-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.faq-item {
-  background: #fffafd;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e6d6e9;
   border-radius: 1rem;
-  padding: 0.5rem;
+}
+
+/* FAQ Card */
+.faq-item {
+  background: #fffafd;
+  border: 1px solid #e6d6e9; 
+  padding: 0.5rem 1rem;
   box-shadow: 0 4px 10px rgba(157, 98, 242, 0.05);
   transition: all 0.3s ease;
-  cursor: pointer;
+  cursor: pointer; 
+}
+.faq-item:first-child {
+  border-top: 1px solid #ccc;
 }
 
 .faq-item:hover {
   background-color: #fcf4fa;
-  transform: translateY(-3px);
+  transform: translateY(-1px);
 }
 
+/* Question and Toggle Row */
 .faq-question-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Question Text */
 .faq-question {
   font-weight: 700;
-  color: #7d5c76; /* Soft plum-gray */
+  color: #7d5c76;
   margin: 0;
   font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Arrow Icon */
 .faq-arrow {
   font-size: 1.5rem;
   color: #7d5c76;
@@ -150,10 +159,26 @@
   transition: transform 0.3s ease;
 }
 
+.faq-item.open .faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* Answer Reveal Animation */
 .faq-answer {
-  color: #6f5564; /* Gentle cocoa plum */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.4s ease, margin-top 0.4s ease;
+  margin-top: 0;
+  color: #6f5564;
   font-size: 0.95rem;
   line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  opacity: 1;
   margin-top: 1rem;
 }
 
@@ -193,10 +218,6 @@
   .final-cta-button {
     width: 100%;
     max-width: 18.75rem;
-  }
-
-  .faq-list {
-    grid-template-columns: 1fr;
   }
 }
 
