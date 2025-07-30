@@ -1,9 +1,8 @@
-/* Footer */
 .footer {
-  background-color: #f9f1ec;
+  background-color: #fffafd; /* Softest blush-lavender base */
   padding: 2rem 0 0;
   font-family: 'Libre Baskerville', serif;
-  color: #5d3b2e;
+  color: #6c4a5f; /* Deep muted plum */
 }
 
 .footer-top {
@@ -12,8 +11,8 @@
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  border-top: 2rem solid #f0dcd2;    
-  border-bottom: 2rem solid #f0dcd2; 
+  border-top: 2rem solid #ecd9f4;    
+  border-bottom: 2rem solid #ecd9f4; 
   padding: 1rem 0;
 }
 
@@ -24,13 +23,12 @@
   line-height: 2;
   text-transform: uppercase;
   font-size: 0.85rem;
-  color: #5d3b2e;
+  color: #7d5c76; /* Desaturated mauve */
 }
 
 .footer-links.left,
 .footer-links.right {
   flex: 1;
-  
 }
 
 .footer-center {
@@ -45,7 +43,10 @@
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
   margin: 0;
-  color: #846C56;
+  background: linear-gradient(90deg, #f26393, #9d62f2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-logo span {
@@ -53,34 +54,33 @@
   font-weight: bold;
   margin-left: 0.3rem;
   font-size: 3rem;
+  color: #9d62f2;
 }
 
 .footer-subtitle {
   font-size: 0.8rem;
   letter-spacing: 0.1875rem; 
   margin: 0rem 0 0.8rem;
-  font-family: 'Libre Baskerville', serif;
-
+  color: #836b79;
 }
 
 .footer-icons {
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
-  color: #5d3b2e;
-  transition: transform 0.3s ease;
-  
+  color: #836b79;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-icons svg:hover {
   transform: scale(1.1);
-  color: #b5a49d; 
+  color: #f26393; /* SoulCode pink */
 }
 
 .footer-bottom {
   width: 100%;
   padding: 1rem 1rem;
-  background-color: #f3dfd6;
+  background-color: #fbeaf5;
   font-size: 0.75rem;
   text-transform: uppercase;
   display: flex;
@@ -88,10 +88,10 @@
   justify-content: center; 
   align-items: center;     
   gap: 0.5rem;
-  color: #5d3b2e;
+  color: #7d5c76;
   text-align: center;
   box-sizing: border-box;
-  border-top: 0.5rem solid #f8f2ec;
+  border-top: 0.5rem solid #f6d6e8;
 }
 
 .footer-links a {
@@ -101,16 +101,15 @@
 
 .footer-links a:visited {
   color: inherit;
-  
 }
+
 .footer-bottom a,
 .footer-bottom a:visited,
 .footer-bottom a:hover,
 .footer-bottom a:active {
   color: inherit;
- text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 .footer-icons a {
   color: inherit;
@@ -126,11 +125,12 @@
 
 .terms-highlight {
   cursor: pointer;
-  color: #7a3e2d;
+  color: #9d62f2;
   font-weight: bold;
   text-decoration: underline;
 }
 
+/* Modal Styling */
 .terms-modal-overlay {
   position: fixed;
   top: 0;
@@ -145,7 +145,7 @@
 }
 
 .terms-modal {
-  background: #fffaf6;
+  background: #fff4fa;
   padding: 2rem;
   max-width: 700px;
   max-height: 80vh;
@@ -158,12 +158,12 @@
 .terms-modal h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #5d3b2e;
+  color: #6c4a5f;
 }
 
 .terms-modal p {
   font-size: 1rem;
-  color: #333;
+  color: #444;
   line-height: 1.6;
   white-space: pre-line;
 }
@@ -172,7 +172,7 @@
   display: block;
   margin: 1.5rem auto 0;
   padding: 0.6rem 1.4rem;
-  background-color: #7a3e2d;
+  background-color: #9d62f2;
   color: white;
   border: none;
   border-radius: 8px;
@@ -182,11 +182,10 @@
 }
 
 .okay-btn:hover {
-  background-color: #5e2d1f;
+  background-color: #8141e6;
 }
 
-
-/* footer-mobile */
+/* Mobile Footer */
 @media (max-width: 48rem) {
   .footer-top {
     flex-direction: column;
@@ -224,7 +223,7 @@
 
   .footer-subtitle {
     font-size: 0.7rem;
-    letter-spacing: 0.125rem; /* 2px */
+    letter-spacing: 0.125rem;
   }
 
   .footer-icons {
@@ -241,4 +240,3 @@
     font-size: 0.7rem;
   }
 }
-

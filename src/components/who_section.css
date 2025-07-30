@@ -1,22 +1,27 @@
 .who-section {
   position: relative;
-  background: linear-gradient(to bottom, #fff8f4, #fbe3da);
-  padding: 1rem 2rem;
+   background: linear-gradient(130deg, #eeedf0, #edd1f7, #fac9de);
+  padding: 2rem 2rem 3rem;
   text-align: center;
   overflow: hidden;
   font-family: 'Georgia', serif;
+  border-radius: 1rem;
 }
 
 .who-heading {
   font-size: 2.5rem;
-  color: #4b2e2e;
+  color: #6b4c5e; /* muted plum */
   margin-bottom: 0.5rem;
 }
 
 .who-subheading {
   font-size: 1.2rem;
-  color: #7a5c5c;
-  margin-bottom: 1rem;
+  color: #8b6f78;
+  margin-bottom: 1.5rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
 }
 
 .who-cards-container {
@@ -24,16 +29,21 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   max-width: 1100px;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
+/* Card Styling */
 .who-static-card {
-  background: #ffffff;
-  padding: 1rem;
+  background: linear-gradient(135deg, #fffafd, #fef1ea);
+  padding: 1.5rem 1.2rem;
   border-radius: 1.5rem;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   white-space: pre-line;
+  text-align: left;
+  font-family: 'Merriweather', serif;
 }
 
 .who-static-card:hover {
@@ -41,48 +51,52 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* Card Title */
 .who-tone-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #3e2723;
+  color: #7a5537; /* warm brown */
   margin-bottom: 1rem;
 }
 
+/* Card Text */
 .who-text {
   font-size: 1rem;
-  color: #5c3b2e;
-  line-height: 1.6;
+  color: #5d3b2e;
+  line-height: 1.75;
 }
 
+/* Footer Text */
 .who-footer-text {
   font-size: 1.2rem;
-  color: #6d4c41;
-  margin-top: 2rem;
+  color: #7e5a4f;
+  margin-top: 2.5rem;
+  font-style: italic;
 }
 
-/* Decorative pastel blobs */
+/* Decorative pastel blobs (softened and styled to match theme) */
 .decorative-blob {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  background: #9f2c1f;
-  opacity: 0.3;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, #f4cce5, #fbe8ef);
+  opacity: 0.25;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(90px);
   z-index: 0;
 }
 
 .blob-top-left {
-  top: -100px;
-  left: -100px;
+  top: -80px;
+  left: -120px;
 }
 
 .blob-bottom-right {
-  bottom: -100px;
-  right: -100px;
+  bottom: -80px;
+  right: -120px;
 }
 
-/* Responsive text */
+/* Responsive */
 @media (max-width: 600px) {
   .who-heading {
     font-size: 2rem;
@@ -92,5 +106,9 @@
   .who-footer-text {
     font-size: 1rem;
     padding: 0 1rem;
+  }
+
+  .who-static-card {
+    padding: 1rem;
   }
 }

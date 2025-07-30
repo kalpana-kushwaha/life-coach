@@ -1,23 +1,20 @@
+/* Services Section */
 .services-section {
-  background: linear-gradient(150deg, #faf7f3 20%, #f8f2ec 30%, #f3dfd6 50%); /* Your specified gradient */
+  background: linear-gradient(150deg, #fdf4f9 20%, #f8eef4 35%, #f3dce6 55%);
   padding: 2rem 1rem;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Adding a Subtle Border with Rounded Corners */
 .services-section::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid rgba(0, 0, 0, 0.1); /* Light border */
+  top: 0; left: 0; right: 0; bottom: 0;
+  border: 2px solid rgba(180, 129, 170, 0.1);
   border-radius: 1rem;
   pointer-events: none;
   z-index: -1;
@@ -27,13 +24,13 @@
 .services-heading {
   font-family: 'Playfair Display', serif;
   font-size: 2.75rem;
-  color: #6d4e35; /* Slightly darker color to match the earthy theme */
+  color: #6b4c5e;
   margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
 }
 
 .services-subheading {
-  color: #6d4e35;
+  color: #7e6b77;
   font-size: 1.1rem;
   max-width: 40rem;
   margin: 0 auto 3rem;
@@ -51,19 +48,18 @@
 
 /* Service Cards */
 .service-card {
-  position: relative;
-  background-color: #e8d2bd; /* Light peach for the cards */
+  background-color: #fbe9f3;
   border-radius: 1rem;
   padding: 3.5rem 1.5rem 1rem;
   width: 100%;
   max-width: 280px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Darker hover effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Service Label */
@@ -73,7 +69,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
-  color: #6d4e35;
+  color: #9d62f2;
   font-weight: 600;
   padding: 0.4rem 1.5rem;
   border-radius: 2rem;
@@ -82,20 +78,21 @@
   max-width: 80%;
 }
 
-/* Service Description */
+/* Description */
 .service-description {
   font-size: 0.95rem;
-  color: #4b2e24;
+  color: #5e4b7c;
   line-height: 1.6;
   padding: 0.5rem;
+  font-family: 'Lora', serif;
 }
 
 /* Local Video Section */
 .local-video-container {
   margin: 3rem auto 1rem;
   max-width: 720px;
-  background: #fffaf6;
-  border: 1px solid #f2e2d0;
+  background: #fffafd;
+  border: 1px solid #f3dce6;
   border-radius: 1rem;
   padding: 2rem 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
@@ -104,15 +101,15 @@
 .video-heading {
   font-family: 'Playfair Display', serif;
   font-size: 1.75rem;
-  color: #7a5537;
+  color: #6b4c5e;
   margin-bottom: 0.5rem;
 }
 
 .video-subtext {
   font-size: 1rem;
-  color: #5d3b2e;
+  color: #7e6b77;
   margin-bottom: 2rem;
-  line-height: 1;
+  line-height: 1.6;
 }
 
 .video-wrapper {
@@ -136,20 +133,21 @@
   font-style: italic;
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
-  color: #7a5537;
+  color: #9d62f2;
   margin-bottom: 0.5rem;
 }
 
 .cta-description {
   font-size: 0.95rem;
-  color: #5d3b2e;
+  color: #5e4b7c;
   max-width: 36rem;
   margin: 0 auto 2rem;
   line-height: 1.6;
+  font-family: 'Lora', serif;
 }
 
 .cta-button {
-  background-color: #c49d7f;
+  background-color: #d6b2e0;
   color: #fff;
   border: none;
   padding: 0.75rem 2rem;
@@ -162,8 +160,8 @@
 }
 
 .cta-button:hover {
-  background-color: #b68a6b;
-  box-shadow: 0 0.5rem 1.25rem rgba(196, 157, 127, 0.4);
+  background-color: #b98cc8;
+  box-shadow: 0 0.5rem 1.25rem rgba(185, 140, 200, 0.4);
 }
 
 /* Responsive */
@@ -176,10 +174,8 @@
     max-width: 90%;
     padding: 2.5rem 1rem 1.5rem;
     margin-bottom: 1rem;
-    
   }
 
-  /* Fix service label for mobile */
   .service-label {
     padding: 0.3rem 1rem;
     font-size: 0.85rem;

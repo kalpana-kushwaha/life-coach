@@ -1,7 +1,7 @@
 /* ========== GLOBAL STYLES ========= */
 .header {
-  font-family: 'Georgia', serif;
-  color: #5c3d2e;
+  font-family: 'Playfair Display', serif;
+  color: #4a3b30; /* soft choco-charcoal */
 }
 
 /* ========== TOP NAVBAR ============ */
@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f3dfd5;
+  background-color: #e9d8f1; /* soft lavender */
   height: 2.75rem;
   padding: 0 2.5rem;
   margin-bottom: 0;
@@ -35,20 +35,19 @@ body {
   object-fit: contain;
   margin-right: 0rem;
   margin-top: 0.5rem;
-  
-  }
+}
 
 .nav-links a {
   font-size: 0.9rem;
   margin: 0 0.9375rem;
-  color: #5c3d2e;
+  color: #5e4b7c; /* muted purple */
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.0625rem;
 }
 
 .nav-links a:hover {
-  color: white;
+  color: #9d62f2; /* SoulCode purple */
 }
 
 /* ========= SOCIAL ICONS =========== */
@@ -62,14 +61,14 @@ body {
 }
 
 .social-icons svg {
-  color: #5c3d2e;
+  color: #5e4b7c;
   font-size: 1.5rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons svg:hover {
   transform: scale(1.1);
-  color: #b5a49d;
+  color: #f26393; /* SoulCode pink */
 }
 
 /* ========== MAIN HEADER =========== */
@@ -78,7 +77,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.875rem 2.5rem;
-  background-color: #ffffff;
+  background-color: #fef9fc; /* soft blush background */
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
   position: relative;
@@ -97,7 +96,10 @@ body {
   font-size: 6rem;
   font-family: 'Great Vibes', cursive;
   font-weight: normal;
-  color: #846C56;
+  background: linear-gradient(90deg, #f26393, #9d62f2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
   line-height: 1.2;
   word-spacing: 0.3125rem;
@@ -106,7 +108,7 @@ body {
 .logo p {
   font-size: 1rem;
   letter-spacing: 0.3125rem;
-  color: var(--choco-brown);
+  color: #5e4b7c;
   margin-top: -0.2rem;
   line-height: 1;
   font-family: 'Libre Baskerville', serif;
@@ -118,7 +120,7 @@ body {
   background: none;
   border: none;
   font-size: 1.8rem;
-  color: #edcec0;
+  color: #9d62f2;
   cursor: pointer;
   margin-left: 0.5rem;
 }
@@ -129,7 +131,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: #f3dfd5;
+  background-color: #e9d8f1;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -149,11 +151,11 @@ body {
 .mobile-dropdown a {
   display: block;
   padding: 0.625rem;
-  color: var(--choco-brown);
+  color: #5e4b7c;
   text-decoration: none;
-  background-color: #f3dfd5;
+  background-color: #e9d8f1;
   margin: 0;
-  border-bottom: 0.0625rem solid #e2cfc0;
+  border-bottom: 0.0625rem solid #d5bfe2;
 }
 
 .mobile-social-icons {
@@ -161,7 +163,7 @@ body {
   justify-content: center;
   gap: 1rem;
   padding: 0.625rem;
-  background-color: #edcec0;
+  background-color: #f4bfdc;
 }
 
 .mobile-social-icons a {
@@ -172,7 +174,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  color: #5c3d2e;
+  color: #5e4b7c;
   border: none;
   box-shadow: none;
   text-decoration: none;
@@ -184,9 +186,10 @@ body {
 
 .mobile-social-icons a:hover svg {
   transform: scale(1.2);
+  color: #f26393;
 }
 
-/* ===== MOBILE HEADER GROUP (Hamburger + Logo) ===== */
+/* ===== MOBILE HEADER GROUP ===== */
 .mobile-header {
   display: none;
   align-items: center;
@@ -199,9 +202,6 @@ body {
   .top-bar {
     padding: 0.5rem 1rem;
     height: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .top-left {
@@ -210,25 +210,16 @@ body {
 
   .mobile-header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
   }
 
   .mobile-menu-toggle {
     display: block;
     font-size: 1.8rem;
-    color: #edcec0;
-    background: transparent;
-    border: none;
-    padding: 0;
-    margin: 0;
-    height: 2rem;
-    width: 2rem;
+    color: #9d62f2;
   }
 
   .mobile-logo img {
-    height: 3rem; /* Match navbar height */
+    height: 3rem;
     width: auto;
     object-fit: contain;
     margin-top: 0.5rem;
@@ -264,10 +255,4 @@ body {
     font-size: 0.8rem;
     letter-spacing: 0.1875rem;
   }
-}
-
-.mobile-menu-toggle {
-  -webkit-tap-highlight-color: transparent; 
-  outline: none; 
-  background-color: transparent; 
 }
