@@ -88,6 +88,7 @@
 .final-cta-button:hover {
   transform: scale(1.05);
   background: linear-gradient(90deg, #efced9, #8141e6);
+  box-shadow: 0 0.5rem 1.25rem rgba(185, 140, 200, 0.4);
 }
 
 /* FAQ Section */

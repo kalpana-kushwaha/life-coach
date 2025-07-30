@@ -172,7 +172,7 @@
   display: block;
   margin: 1.5rem auto 0;
   padding: 0.6rem 1.4rem;
-  background-color: #9d62f2;
+  background: linear-gradient(170deg, #c485d7, #d791cc);
   color: white;
   border: none;
   border-radius: 8px;
@@ -182,7 +182,7 @@
 }
 
 .okay-btn:hover {
-  background-color: #8141e6;
+  background: linear-gradient(90deg, #efced9, #8141e6);
 }
 
 /* Mobile Footer */

@@ -141,26 +141,27 @@
   font-size: 0.95rem;
   color: #5e4b7c;
   max-width: 36rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
   line-height: 1.6;
   font-family: 'Lora', serif;
 }
 
 .cta-button {
-  background-color: #d6b2e0;
+  background: linear-gradient(170deg, #c485d7, #d791cc);
   color: #fff;
-  border: none;
+  border: rgb(214, 124, 124) 1px solid;
   padding: 0.75rem 2rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   letter-spacing: 0.05rem;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #b98cc8;
+  background: linear-gradient(90deg, #efced9, #8141e6);
+  transform: scale(1.05);
   box-shadow: 0 0.5rem 1.25rem rgba(185, 140, 200, 0.4);
 }
 

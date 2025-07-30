@@ -65,6 +65,8 @@
 
 .hero-cta:hover {
   background: linear-gradient(90deg, #efced9, #8141e6);
+  box-shadow: 0 0.5rem 1.25rem rgba(185, 140, 200, 0.4);
+  transform: scale(1.05);
 }
 
 .hero-right {
@@ -274,18 +276,20 @@
   bottom: -1.3rem;
   right: 7rem;
   background: linear-gradient(170deg, #c485d7, #d791cc);
-  color: #5e4b7c;
+  color: #fff;
   padding: 0.75rem 2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 2px;
+  border-radius: 0.5rem;
   border: rgb(214, 124, 124) 1px solid;
   cursor: pointer;
 }
 .about-btn:hover {
-  transform: scale(1.05);
   background: linear-gradient(90deg, #efced9, #8141e6);
+  box-shadow: 0 0.5rem 1.25rem rgba(185, 140, 200, 0.4);
+  transform: scale(1.05);
 }
 
 /* ========== RESPONSIVE ========== */
