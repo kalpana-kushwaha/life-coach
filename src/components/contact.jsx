@@ -40,7 +40,7 @@ const Contact = () => {
           <div className="contact-photo-box">
             <img src={ProfileImage} alt="Leyla Stuart" className="contact-photo" />
           </div>
-          <h3 className="contact-name">LEYLA STUART</h3>
+          <h3 className="contact-name">Pooja Abhay</h3>
           <p className="follow-text">follow</p>
           <div className="social-icons-contact">
           <a href="https://www.instagram.com/pooja_abhayk" target="_blank" rel="noopener noreferrer">
