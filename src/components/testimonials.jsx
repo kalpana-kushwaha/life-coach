@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './Testimonials.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -53,27 +53,27 @@ const Testimonials = ({ id = 'testimonials' }) => {
   const touchEndX = useRef(null);
   const swipeRef = useRef(null);
 
-  const next = () => {
+  const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % testimonials.length);
-  };
+  }, []);
 
-  const prev = () => {
+  const prev = useCallback(() => {
     setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-  };
+  }, []);
 
   useEffect(() => {
     timeoutRef.current = setTimeout(() => {
       next();
     }, 8000);
     return () => clearTimeout(timeoutRef.current);
-  }, [current]);
+  }, [current, next]);
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = useCallback((e) => {
     touchStartX.current = e.touches[0].clientX;
     touchEndX.current = null;
-  };
+  }, []);
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = useCallback((e) => {
     touchEndX.current = e.touches[0].clientX;
     if (touchStartX.current !== null && touchEndX.current !== null) {
       const deltaX = touchStartX.current - touchEndX.current;
@@ -81,9 +81,9 @@ const Testimonials = ({ id = 'testimonials' }) => {
         e.preventDefault();
       }
     }
-  };
+  }, []);
 
-  const handleTouchEnd = (e) => {
+  const handleTouchEnd = useCallback((e) => {
     const endX = touchEndX.current ?? (e.changedTouches && e.changedTouches[0]?.clientX);
     if (touchStartX.current === null || endX === null) return;
 
@@ -94,7 +94,7 @@ const Testimonials = ({ id = 'testimonials' }) => {
 
     touchStartX.current = null;
     touchEndX.current = null;
-  };
+  }, [next, prev]);
 
   useEffect(() => {
     const node = swipeRef.current;
@@ -105,11 +105,11 @@ const Testimonials = ({ id = 'testimonials' }) => {
     node.addEventListener('touchend', handleTouchEnd, { passive: false });
 
     return () => {
-      node.removeEventListener('touchstart', handleTouchStart, { passive: false });
-      node.removeEventListener('touchmove', handleTouchMove, { passive: false });
-      node.removeEventListener('touchend', handleTouchEnd, { passive: false });
+      node.removeEventListener('touchstart', handleTouchStart);
+      node.removeEventListener('touchmove', handleTouchMove);
+      node.removeEventListener('touchend', handleTouchEnd);
     };
-  }, []);
+  }, [handleTouchStart, handleTouchMove, handleTouchEnd]);
 
   return (
     <section
@@ -150,6 +150,3 @@ const Testimonials = ({ id = 'testimonials' }) => {
 };
 
 export default Testimonials;
-
-
-
