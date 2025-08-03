@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import CoachImage from '/coach.jpg';
 import FlowerImage from '/flower.png';
-import Coach2 from '/coach2.png';
+import Coach2 from '/coach2.jpg';
 import './Home.css';
 import WhoSection from './who_section';
 import Services from './service';

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import ProfileImage from '/coach2.png'; 
+import ProfileImage from '/coach2.jpg'; 
 import {
   FaInstagram, FaFacebookF} from 'react-icons/fa';
 import Footer from './Footer';
