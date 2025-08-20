@@ -19,6 +19,17 @@ const Contact = () => {
       'nwv_9ZULVo5kmFFLW'      
     ).then(
       () => {
+        emailjs.send(
+          'service_q0h3o54',        // service ID
+          'template_8bjsdic',   // auto-reply template ID
+          {
+            name: form.current.first_name.value,
+            email: form.current.email.value,
+            title: form.current.subject.value,
+            message: form.current.message.value
+          },
+          'nwv_9ZULVo5kmFFLW'
+        );
         alert('Message sent successfully!');
         form.current.reset();
       },
