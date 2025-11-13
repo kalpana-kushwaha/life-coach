@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Who_section.css';
+import './who_section.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
