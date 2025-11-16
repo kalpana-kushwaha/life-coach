@@ -1,7 +1,7 @@
 .footer {
   background-color: #fffafd; /* Softest blush-lavender base */
   padding: 2rem 0 0;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Inter", sans-serif;
   color: #6c4a5f; /* Deep muted plum */
 }
 
@@ -22,10 +22,15 @@
   margin: 0 auto;
   line-height: 2;
   text-transform: uppercase;
-  font-size: 0.85rem;
-  color: #7d5c76; /* Desaturated mauve */
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #5e4b7c; /* Desaturated mauve */
 }
 
+.footer-links :hover {
+  color: #9d62f2;  /* SoulCode purple */
+  
+}
 .footer-links.left,
 .footer-links.right {
   flex: 1;
@@ -50,7 +55,7 @@
 }
 
 .footer-logo span {
-  font-family: 'Playfair Display', serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   margin-left: 0.3rem;
   font-size: 3rem;
@@ -62,6 +67,7 @@
   letter-spacing: 0.1875rem; 
   margin: 0rem 0 0.8rem;
   color: #836b79;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .footer-icons {
@@ -129,7 +135,9 @@
   font-weight: bold;
   text-decoration: underline;
 }
-
+.terms-highlight:hover {
+  color: #781616;
+}
 /* Modal Styling */
 .terms-modal-overlay {
   position: fixed;
@@ -155,6 +163,7 @@
   position: relative;
 }
 
+
 .terms-modal h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -176,9 +185,10 @@
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "Inter", sans-serif;
 }
 
 .okay-btn:hover {

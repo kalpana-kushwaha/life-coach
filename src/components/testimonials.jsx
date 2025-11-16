@@ -6,39 +6,39 @@ import bgImage from '/testimonial.jpg';
 
 const testimonials = [
   {
-    name: '',
+    name: 'Shubhra',
     quote: `Thanks Pooja, Thanks for believing in me. The conversation with you gave me all the more clarity and surity that with a supportive team like yours it is certainly doable....... 
     I was a little skeptical about a few things and you very beautiful were able to address all my apprehensions. 
     I am sure I will have questions as I move ahead in the learning curve. .......Love, Gratitude and more power to you 🥰`,
   },
   {
-    name: 'Abhay',
+    name: 'Swati',
     quote: `I’ve seen you at your best when you’re deeply present with someone—just listening with your whole heart. That’s rare.
 Whenever I feel stuck, you don’t try to fix things—you ask questions that help me think clearly.
 What inspires me is your inner strength. Even in your own tough moments, you still show up for others.
 You light up when someone says, ‘Pooja, you helped me see what I couldn’t before.’ That’s when I know—this is your calling.`,
   },
   {
-    name: '',
+    name: 'Akansha',
     quote: `A heartfelt thank you to Pooja ma'am for creating such a safe, open, and reflective space during the session. Your words and insights gently pushed me to pause, question, and explore the layers I’ve been carrying for so long.
     Thank you for helping me see that it’s okay to not have all the answers right away—and that every step counts.
     Looking forward to this journey. I’m truly filled with gratitude🙏.`,
   },
   {
-    name: '',
+    name: 'Nayan',
     quote: `Dear Pooja 💖
     It was really wonderful talking to you. Your hand holding approach and a humble smile was really soothing. It made me so comfortable with you to have a professional chat and a personal one as well.
     I'm even more excited to be there. Really keen to step ahead in life for CHAPTER - 2 with you and all.`,
   },
   {
-    name: '',
+    name: 'Yasmin',
     quote: `Hi Pooja,
     Just wanted to say thanks for making me feel so comfortable during our call🫠. I loved how open and honest we could be, and your insights really helped me understand the value of life coaching. 
     Your story and experience as a coach were super inspiring, and I'm excited to learn more😇. You broke down the whole process in a way that made total sense, and I'm feeling confident about this journey. 
     Plus, thank you for clearing all my doubts – it really put my mind at ease🥰. Thanks again for your time and guidance – can't wait to get started!"`,
   },
   {
-    name: '',
+    name: 'Pramila',
     quote: `A hearty❤ thanks, to you Pooja ma'am for your support as you cleared all my doubts.😊
     I love your realistic and sensible nature. I am so glad to have conversation with you that brought clarity.
     It was such a comfortable conversation, and I’m excited to learn a lot from your experience which might inspire me as well.

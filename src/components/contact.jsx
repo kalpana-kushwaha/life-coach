@@ -49,7 +49,7 @@ const Contact = () => {
             <h2 className="contact-title">CONTACT</h2>
           </div>
           <div className="contact-photo-box">
-            <img src={ProfileImage} alt="Leyla Stuart" className="contact-photo" />
+            <img src={ProfileImage} alt="Pooja Abhay" className="contact-photo" />
           </div>
           <h3 className="contact-name">Pooja Abhay</h3>
           <p className="follow-text">follow</p>

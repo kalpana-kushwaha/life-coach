@@ -24,7 +24,7 @@
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.3rem;
   color: #6b4c5e;
   margin-bottom: 1rem;
@@ -32,7 +32,7 @@
 }
 
 .hero-script {
-  font-family: 'Playfair Display', serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #5d4f6f;
   margin-bottom: 1rem;
@@ -41,7 +41,7 @@
 
 .hero-subheadline,
 .shift-message {
-  font-family: 'Playfair Display', serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #5d4f6f;
   line-height: 1.8;
@@ -127,7 +127,7 @@
 }
 
 .elevate-subheading {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: white;
@@ -233,7 +233,7 @@
 }
 
 .about-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif; 
   font-size: 2.4rem;
   color: #6b4c5e;
   margin-top: 1rem;
@@ -268,7 +268,7 @@
   line-height: 1.9;
   font-size: 1.05rem;
   color: #5e4b7c;
-  font-family: 'Lora', serif;
+  font-family: "Inter", sans-serif; 
 }
 
 .about-btn {
@@ -278,7 +278,7 @@
   background: linear-gradient(170deg, #c485d7, #d791cc);
   color: #fff;
   padding: 0.75rem 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 2px;

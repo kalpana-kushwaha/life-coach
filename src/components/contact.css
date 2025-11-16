@@ -35,13 +35,13 @@
   font-size: 1.5rem;
   border-radius: 0.5rem;
   z-index: 2;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #7b569b; /* rich muted lavender */
 }
 
 .contact-title {
   font-size: 2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #7b569b;
   margin: 0;
@@ -104,6 +104,7 @@
   font-size: 0.95rem;
   font-style: italic;
   color: #7b569b;
+  font-family: "Inter", sans-serif;
   margin-bottom: 1.5rem;
 }
 
@@ -131,7 +132,7 @@
   border-radius: 0.25rem;
   background-color: #ffffff;
   color: #5c4a3d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -144,7 +145,7 @@
   border-radius: 0.25rem;
   background-color: #ffffff;
   color: #5c4a3d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -174,8 +175,9 @@
   border: rgb(214, 124, 124) 1px solid;
   border-radius: 0.5rem;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
   transition: background 0.3s ease, transform 0.2s ease;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .contact-form button:hover {

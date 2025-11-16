@@ -1,8 +1,8 @@
 /* Services Section */
 .services-section {
   background: linear-gradient(150deg, #eed8e4 20%, #f8eef4 35%, #f3dce6 55%);
-  padding: 2rem 1rem;
-  font-family: 'Montserrat', sans-serif;
+  padding: 2rem 1rem;  
+ font-family: "Inter", sans-serif;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -21,7 +21,7 @@
 
 /* Headings */
 .services-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.75rem;
   color: #6b4c5e;
   margin-bottom: 0.5rem;
@@ -34,6 +34,7 @@
   max-width: 40rem;
   margin: 0 auto 3rem;
   line-height: 1.7;
+  font-family: "Inter", sans-serif;
 }
 
 /* Grid Layout */
@@ -75,6 +76,7 @@
   font-size: 0.9rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-width: 80%;
+  font-family: "Inter", sans-serif;
 }
 
 /* Description */
@@ -83,7 +85,7 @@
   color: #5e4b7c;
   line-height: 1.6;
   padding: 0.5rem;
-  font-family: 'Lora', serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Local Video Section */
@@ -98,7 +100,7 @@
 }
 
 .video-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif; 
   font-size: 1.75rem;
   color: #6b4c5e;
   margin-bottom: 0.5rem;
@@ -109,6 +111,7 @@
   color: #7e6b77;
   margin-bottom: 2rem;
   line-height: 1.6;
+  font-family: "Inter", sans-serif;
 }
 
 .video-wrapper {
@@ -129,8 +132,8 @@
 
 /* CTA Section */
 .services-cta {
-  font-style: italic;
-  font-family: 'Playfair Display', serif;
+  font-style: italic; 
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   color: #5d4f6f;
   margin-bottom: 0.5rem;
@@ -141,8 +144,8 @@
   color: #5e4b7c;
   max-width: 36rem;
   margin: 0 auto 1rem;
-  line-height: 1.6;
-  font-family: 'Lora', serif;
+  line-height: 1.6; 
+  font-family: "Inter", sans-serif;
 }
 
 .cta-button {
@@ -150,11 +153,12 @@
   color: #fff;
   border: rgb(214, 124, 124) 1px solid;
   padding: 0.75rem 2rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   border-radius: 0.5rem;
   cursor: pointer;
   letter-spacing: 0.05rem;
+  font-family: "Inter", sans-serif;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 

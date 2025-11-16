@@ -15,7 +15,7 @@
   font-size: 2.3rem;
   color: #7a4f4f; /* muted plum-brown */
   margin-bottom: 1rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif; 
 }
 
 /* Subline */
@@ -23,7 +23,7 @@
   font-size: 1.1rem;
   color: #9c6e63; /* soft clay */
   margin-bottom: 2rem;
-  font-family: 'Georgia', serif;
+  font-family: "Inter", sans-serif;
   max-width: 38rem;
   margin-left: auto;
   margin-right: auto;
@@ -37,7 +37,7 @@
   border-radius: 1rem;
   padding: 2.5rem 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.04);
-  font-family: 'Merriweather', serif;
+  font-family: "Inter", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -52,6 +52,7 @@
   color: #70483c; /* warm brown */
   margin-bottom: 0.5rem;
   font-weight: 600;
+  font-family: "Inter", sans-serif;
 }
 
 /* Paragraph */
@@ -73,11 +74,12 @@
   font-weight: bold;
   font-size: 0.95rem;
   letter-spacing: 0.05rem;
+  font-family: "Inter", sans-serif;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .download-btn:hover {
-  background-color: #b86d90;
+  background: linear-gradient(90deg, #efced9, #8141e6);
   box-shadow: 0 0.5rem 1rem rgba(196, 157, 127, 0.4);
 }
 

@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Inter", sans-serif;
 }
 
 .final-cta-wrapper {
@@ -59,7 +60,7 @@
   font-weight: 700;
   color: #6c4a5f; /* Rich plum */
   margin-bottom: 1rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif; 
 }
 
 .final-cta-desc {
@@ -67,7 +68,7 @@
   color: #836b79; /* Dusty lavender-gray */
   line-height: 1.6;
   margin-bottom: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Button */
@@ -80,9 +81,11 @@
   outline: none;
   border-radius: 0.4rem;
   text-decoration: none;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   transition: background 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+  font-size: 0.95rem;
 }
 
 .final-cta-button:hover {
@@ -107,7 +110,8 @@
   text-align: center;
   color: #6c4a5f;
   margin-bottom: 2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif; 
+
 }
 
 .faq-list {
@@ -148,7 +152,7 @@
   color: #7d5c76;
   margin: 0;
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Arrow Icon */
@@ -173,7 +177,8 @@
   color: #6f5564;
   font-size: 0.95rem;
   line-height: 1.6;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 
 .faq-item.open .faq-answer {

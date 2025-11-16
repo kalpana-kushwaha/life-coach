@@ -12,8 +12,8 @@ const Worksheet = ({ id = "freebie" }) => {
           A quick, powerful worksheet to help you get clear on what you truly want from your relationships and self.
         </p>
         <div className="freebie-card">
-          <p className="highlight"><strong>“What Do I Really Want?” Worksheet</strong></p>
-          <p>Reflective prompts to bring your emotions, needs, and goals into focus.</p>
+          <p className="highlight"><strong>“What Do I Really Want?” </strong></p>
+          <p>Questions that spark awareness—and open the door to change.</p>
           <a href="/your-download.pdf" className="download-btn" download>
             Download Now Free
           </a>

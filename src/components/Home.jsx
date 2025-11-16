@@ -32,7 +32,7 @@ const Home = () => {
         <div className="hero-content">
           <div className="hero-left">
             <h1 className="hero-title">
-              You’re not “too emotional.” You’re deeply aware — and that awareness is calling for change.
+              You’re not “too emotional”. You’re deeply aware — and that awareness is calling for change.
             </h1>
 
             <p className="hero-script">
