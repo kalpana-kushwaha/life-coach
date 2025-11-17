@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './service.css';
@@ -6,8 +6,30 @@ import { Link } from 'react-router-dom';
 import video from '/video.mp4';
 
 const ServicesSection = ({ id = "services" }) => {
+  const videoRef = useRef(null);
+
   useEffect(() => {
     AOS.init({ duration: 800 });
+  }, []);
+
+  // Auto-play on scroll into view
+  useEffect(() => {
+    const vid = videoRef.current;
+    if (!vid) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          vid.play();
+        } else {
+          vid.pause();
+        }
+      },
+      { threshold: 0.5 } // 50% visible = play
+    );
+
+    observer.observe(vid);
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -59,7 +81,13 @@ const ServicesSection = ({ id = "services" }) => {
           Watch how transformation begins in just one conversation.
         </p>
         <div className="video-wrapper">
-          <video controls playsInline className="styled-video">
+          <video
+            ref={videoRef}
+            playsInline
+            muted         // 🔥 required for autoplay
+            controls
+            className="styled-video"
+          >
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
