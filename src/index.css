@@ -76,3 +76,9 @@ html, body, #root {
   color: var(--choco-brown);
   font-family: "Inter", sans-serif;
 }
+
+/* Remove blue highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
