@@ -31,21 +31,22 @@ const ServicesSection = ({ id = "services" }) => {
     observer.observe(vid);
     return () => observer.disconnect();
   }, []);
-  // Auto-unmute when user increases volume
+  // Auto-unmute on first user interaction (tap or click)
 useEffect(() => {
   const vid = videoRef.current;
   if (!vid) return;
 
-  const handleVolumeChange = () => {
-    if (vid.volume > 0 && vid.muted) {
-      vid.muted = false;
-    }
+  
+  const unmuteOnFirstInteraction = () => {
+    vid.muted = false;
+    vid.volume = 1; 
+    vid.removeEventListener("click", unmuteOnFirstInteraction);
   };
 
-  vid.addEventListener("volumechange", handleVolumeChange);
+  vid.addEventListener("click", unmuteOnFirstInteraction);
 
   return () => {
-    vid.removeEventListener("volumechange", handleVolumeChange);
+    vid.removeEventListener("click", unmuteOnFirstInteraction);
   };
 }, []);
 
