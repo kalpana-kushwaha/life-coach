@@ -20,7 +20,7 @@ const ServicesSection = ({ id = "services" }) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          vid.play();
+          vid.play().catch(() => {}); // ignore play rejection
         } else {
           vid.pause();
         }
@@ -31,25 +31,34 @@ const ServicesSection = ({ id = "services" }) => {
     observer.observe(vid);
     return () => observer.disconnect();
   }, []);
-  // Auto-unmute on first user interaction (tap or click)
-useEffect(() => {
-  const vid = videoRef.current;
-  if (!vid) return;
 
-  
-  const unmuteOnFirstInteraction = () => {
-    vid.muted = false;
-    vid.volume = 1; 
-    vid.removeEventListener("click", unmuteOnFirstInteraction);
-  };
+  // Auto-unmute on first user interaction (click/touch/pointer)
+  useEffect(() => {
+    const vid = videoRef.current;
+    if (!vid) return;
 
-  vid.addEventListener("click", unmuteOnFirstInteraction);
+    const unmuteOnInteraction = () => {
+      if (vid.muted) {
+        vid.muted = false;
+        vid.volume = 1;
+      }
+      // remove listeners after first interaction
+      vid.removeEventListener('click', unmuteOnInteraction);
+      vid.removeEventListener('touchstart', unmuteOnInteraction);
+      vid.removeEventListener('pointerdown', unmuteOnInteraction);
+    };
 
-  return () => {
-    vid.removeEventListener("click", unmuteOnFirstInteraction);
-  };
-}, []);
+    // Add multiple event listeners for better mobile support
+    vid.addEventListener('click', unmuteOnInteraction);
+    vid.addEventListener('touchstart', unmuteOnInteraction);
+    vid.addEventListener('pointerdown', unmuteOnInteraction);
 
+    return () => {
+      vid.removeEventListener('click', unmuteOnInteraction);
+      vid.removeEventListener('touchstart', unmuteOnInteraction);
+      vid.removeEventListener('pointerdown', unmuteOnInteraction);
+    };
+  }, []);
 
   return (
     <section className="services-section" id={id}>
