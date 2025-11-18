@@ -31,6 +31,24 @@ const ServicesSection = ({ id = "services" }) => {
     observer.observe(vid);
     return () => observer.disconnect();
   }, []);
+  // Auto-unmute when user increases volume
+useEffect(() => {
+  const vid = videoRef.current;
+  if (!vid) return;
+
+  const handleVolumeChange = () => {
+    if (vid.volume > 0 && vid.muted) {
+      vid.muted = false;
+    }
+  };
+
+  vid.addEventListener("volumechange", handleVolumeChange);
+
+  return () => {
+    vid.removeEventListener("volumechange", handleVolumeChange);
+  };
+}, []);
+
 
   return (
     <section className="services-section" id={id}>
@@ -84,7 +102,7 @@ const ServicesSection = ({ id = "services" }) => {
           <video
             ref={videoRef}
             playsInline
-            muted         // 🔥 required for autoplay
+            muted         
             controls
             className="styled-video"
           >
