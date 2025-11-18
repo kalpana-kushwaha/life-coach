@@ -3,6 +3,7 @@ import './Worksheet.css';
 import { Link } from 'react-router-dom';
 
 
+
 const Worksheet = ({ id = "freebie" }) => {
   return (
     <section className="freebie-section" id={id}>
@@ -14,7 +15,7 @@ const Worksheet = ({ id = "freebie" }) => {
         <div className="freebie-card">
           <p className="highlight"><strong>“What Do I Really Want?” </strong></p>
           <p>Questions that spark awareness—and open the door to change.</p>
-          <a href="/your-download.pdf" className="download-btn" download>
+          <a href="/worksheet.pdf" className="download-btn" download>
             Download Now Free
           </a>
         </div>
