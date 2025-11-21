@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FaInstagram, FaFacebookF, FaBars, FaTimes
+  FaInstagram, FaFacebookF, FaBars, FaTimes,FaLinkedinIn 
 } from 'react-icons/fa';
 import './Header.css';
 import logoc from '/logo.png';
@@ -63,6 +63,9 @@ const Header = () => {
           <a href="https://www.facebook.com/pooja.gahlot.127" target="_blank" rel="noopener noreferrer">
             <FaFacebookF />
           </a>
+           <a href="https://www.linkedin.com/in/pooja-abhayk-235b33384/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
         </div>
       </div>
 
@@ -81,6 +84,9 @@ const Header = () => {
             <a href="https://www.facebook.com/pooja.gahlot.127" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
+            <a href="https://www.linkedin.com/in/pooja-abhayk-235b33384/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
           </div>
         </div>
       )}

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import ProfileImage from '/coach2.jpg'; 
 import {
-  FaInstagram, FaFacebookF} from 'react-icons/fa';
+  FaInstagram, FaFacebookF,FaLinkedinIn} from 'react-icons/fa';
 import Footer from './Footer';
 import './contact.css';
 import emailjs from '@emailjs/browser';
@@ -58,6 +58,7 @@ const Contact = () => {
           <FaInstagram /></a>
           <a href="https://www.facebook.com/pooja.gahlot.127" target="_blank" rel="noopener noreferrer">
           <FaFacebookF /> </a> 
+          <a href="https://www.linkedin.com/in/pooja-abhayk-235b33384/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
           </div>
         </div>
 
