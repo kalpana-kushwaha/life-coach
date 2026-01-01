@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Contact from './components/contact';  
 import Footer from './components/Footer';
 import PageWrapper from './components/PageWrapper';
+import GAPageTracker from "./components/GAPageTracker";
 import './index.css';
 
 const ScrollToHashElement = () => {
@@ -64,6 +65,7 @@ const AnimatedRoutes = () => {
 const App = () => {
   return (
     <Router>
+      <GAPageTracker />
       <ScrollToTop />
       <Header />
       <AnimatedRoutes />
