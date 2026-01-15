@@ -95,7 +95,7 @@ const Header = () => {
       <div className="main-header">
         <div className="logo">
           <h1>Pooja <span>Abhay</span></h1>
-          <p>Life ✦ Relationship Coach</p>
+          <p>Life Alignment Coach</p>
         </div>
       </div>
     </header>

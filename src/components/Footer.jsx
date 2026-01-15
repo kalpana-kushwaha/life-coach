@@ -20,7 +20,7 @@ const Footer = () => {
 
         <div className="footer-center">
           <h1 className="footer-logo">Pooja Abhay</h1>
-          <p className="footer-subtitle">Life ✦ Relationship Coach</p>
+          <p className="footer-subtitle">Life Alignment Coach</p>
           <div className="footer-icons">
             <a href="https://www.instagram.com/pooja_abhayk" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             <a href="https://www.facebook.com/pooja.gahlot.127" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
